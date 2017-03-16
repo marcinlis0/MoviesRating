@@ -1,10 +1,11 @@
-<h2>Adding new movie</h2>
-<br/>
-<%= form_for :movie, url: movies_path do |f| %>
+<h1>Editing movie</h1>
+
+<%= form_for :movie, url: movie_path(@movie), method: :patch do |f| %>
+
     <p>
       <%= f.label :Title %><br>
       <% if @movie.errors[:title].any? %>
-        <small class="bg-danger"><%= @movie.errors.full_messages_for(:title).first %><br/></small>
+          <small class="bg-danger"><%= @movie.errors.full_messages_for(:title).first %><br/></small>
       <% end %>
       <%= f.text_field :title %>
     </p>
@@ -24,12 +25,12 @@
       <% if @movie.errors[:description].any? %>
           <small class="bg-danger"><%= @movie.errors.full_messages_for(:description).first %><br/></small>
       <% end %>
-      <%= f.text_area :description %>
+      <%= f.text_area :description, size: "30x5" %>
     </p>
-
     <p>
-      <%= f.submit 'Add movie' %>
+      <%= f.submit 'Edit movie' %>
     </p>
     <br/>
     <%= link_to 'Back to list', movies_path %>
 <% end %>
+
