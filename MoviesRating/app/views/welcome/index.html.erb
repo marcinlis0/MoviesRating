@@ -1,21 +1,23 @@
 <div class="row">
   <div class="col-md-4">
-    <h2>Getting started</h2>
+    <h2>Rate films</h2>
     <p>
-      ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-      enables a clean separation of concerns and gives you full control over markup
-      for enjoyable, agile development.
+      Do you have your favourite films? Or maybe do you hate any of them? Use our website and rate them.
     </p>
-    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <p><p><%= link_to 'Movie list', '/list', class: 'btn btn-default' %></p></p>
   </div>
   <div class="col-md-4">
-    <h2>Get more libraries</h2>
-    <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <h2>Create an account</h2>
+    <p>
+      Create an account and get full access to our website! You will be able to read about films and rate them.
+    </p>
+    <p><%= link_to 'Sing up', sign_up_path, class: 'btn btn-default' %></p>
   </div>
   <div class="col-md-4">
-    <h2>Web Hosting</h2>
-    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <h2>Contact</h2>
+    <p>
+      Do you have any questions? You can write an email or call us.<br/><br/>
+    </p>
+    <p><%= link_to 'Contact us', '/contact', class: 'btn btn-default' %></p>
   </div>
 </div>

@@ -18,7 +18,7 @@ kit.to_file('public/pdf/' + @movie.title + '.pdf')
 </p>
 
 <p>
-  <%= link_to 'Download PDF', '/pdf/' + @movie.title + '.pdf', :action => :download %>
+  <%= link_to 'Download PDF', '/pdf/' + @movie.title + '.pdf', :action => :download, target: :_blank %>
 </p>
 
 <br/>
