@@ -1,4 +1,10 @@
 <ul class="nav navbar-nav navbar-right">
-  <li><%= link_to "Sign up",   '#' %></li>
-  <li><%= link_to "log in",   '#' %></li>
+  <% if signed_in? %>
+      <li><a>Hello <%= current_user.email.split("@").first %></a></li>
+      <li><%= link_to "Sign out", sign_out_path, method: :delete %></li>
+  <% else %>
+      <li><%= link_to "Sign up", sign_up_path %></li>
+      <li><%= link_to "Log in", sign_in_path %></li>
+  <% end %>
+
 </ul>

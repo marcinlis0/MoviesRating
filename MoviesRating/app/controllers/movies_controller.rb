@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  before_action :require_login, except: [:index, :new]
 
   def index
     @movies = Movie.all
