@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails MoviesRating: test" uuid="880d48ad-2b67-40e7-a7ac-dbc371331e33">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:moviesrating_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails MoviesRating: development" uuid="ea3e33da-5855-4cdd-8c0e-6679433b99da">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:moviesrating_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails MoviesRating: production" uuid="d7d6a08e-f5b4-44c1-92be-67cada6e92b1">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:moviesrating_production</jdbc-url>
+    </data-source>
+  </component>
+</project>
