@@ -1,24 +1,13 @@
-# README
+# Marcin Lis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MoviesRating - serwis do przeglądania filmów.
 
-Things you may want to cover:
+Użyte dodatkowe gemy:
+* clearance - rejestracja i logowanie,
+* wkhtmltopdf-binary, pdfkit - generowanie plików pdf
+* sqlite3 (lokalnie), pg (serwer) - bazy danych
+* bootstrap-sass - import bootstrap css
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Logowanie do panelu admina:
+* login: admin@test.pl
+* hasło: admin
