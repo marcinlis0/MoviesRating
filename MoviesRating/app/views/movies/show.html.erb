@@ -1,8 +1,25 @@
+<%
+require 'pdfkit'
+
+kit = PDFKit.new('<h2><center>' + @movie.title + '</center></h2><br/><p>' +
+                     @movie.description + '</p><br/><a href="' +
+                     request.original_url + '">' +
+                     request.original_url + '</a>')
+
+kit.to_file('public/pdf/' + @movie.title + '.pdf')
+%>
+
+
 <h2><%= @movie.title %></h2>
 <br/>
 
 <p>
   <%= @movie.description %>
 </p>
+
+<p>
+  <%= link_to 'Download PDF', '/pdf/' + @movie.title + '.pdf', :action => :download %>
+</p>
+
 <br/>
 <%= link_to 'Back to list', '/list' %>
