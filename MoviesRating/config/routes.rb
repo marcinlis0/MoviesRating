@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'start', to: 'welcome#index'
   get 'contact', to: 'welcome#contact'
   get 'about', to: 'welcome#about'
+  get 'list', to: 'movies#list'
 
   root 'welcome#index'
 

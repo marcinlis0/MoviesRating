@@ -1,0 +1,12 @@
+<h3>Movies list</h3>
+<hr/>
+
+<% @movies.each do |movie| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3><%= link_to movie.title, movie_path(movie) %></h3><br/>
+      <p><%= movie.short_desc %></p>
+    </div>
+  </div>
+<% end %>
+

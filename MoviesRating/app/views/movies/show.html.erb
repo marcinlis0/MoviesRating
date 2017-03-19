@@ -1,18 +1,8 @@
-<h2>Movie details</h2>
+<h2><%= @movie.title %></h2>
 <br/>
-<p>
-  <strong>Title:</strong>
-  <%= @movie.title %>
-</p>
 
 <p>
-  <strong>Short description:</strong>
-  <%= @movie.short_desc %>
-</p>
-
-<p>
-  <strong>Full description:</strong>
   <%= @movie.description %>
 </p>
 <br/>
-<%= link_to 'Back to list', movies_path %>
+<%= link_to 'Back to list', '/list' %>

@@ -18,24 +18,23 @@
     <th>Options</th>
   </tr>
   <% @movies.each do |movie| %>
-  <tr>
-    <td>
-      <%= movie.title %>
-    </td>
-    <td>
-      <%= movie.short_desc %>
-    </td>
-    <td>
-      <%= movie.description %>
-    </td>
-    <td>
-      <%= link_to 'Show', movie_path(movie) %><br/>
-      <%= link_to 'Edit', edit_movie_path(movie) %><br/>
-      <%= link_to 'Delete', movie_path(movie),
-                  method: :delete,
-                  data: { confirm: 'Are you sure you want to remove ' + movie.title + '?' } %>
-    </td>
-  </tr>
+    <tr>
+      <td>
+        <%= movie.title %>
+      </td>
+      <td>
+        <%= movie.short_desc %>
+      </td>
+      <td>
+        <%= movie.description %>
+      </td>
+      <td>
+        <%= link_to 'Edit', edit_movie_path(movie) %><br/>
+        <%= link_to 'Delete', movie_path(movie),
+                    method: :delete,
+                    data: { confirm: 'Are you sure you want to remove ' + movie.title + '?' } %>
+      </td>
+    </tr>
   <% end %>
 
 </table>

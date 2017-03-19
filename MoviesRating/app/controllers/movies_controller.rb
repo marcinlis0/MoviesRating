@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  before_action :require_login, except: [:index, :new]
+  before_action :require_login, except: [:list, :show]
 
   def index
     @movies = Movie.all
@@ -7,6 +7,10 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+  end
+
+  def list
+    @movies = Movie.all
   end
 
   def new
