@@ -1,7 +1,7 @@
 # Marcin Lis
 
 ## MoviesExplorer
-Serwis służący do przeglądania filmów, czytania ich opisów, rodzajów.
+Serwis służący do przeglądania filmów.
 <br/><br/>
 
 ## Działanie
