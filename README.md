@@ -1,6 +1,6 @@
 # Marcin Lis
 
-## MoviesRating
+## MoviesExplorer
 Serwis służący do przeglądania filmów, czytania ich opisów, rodzajów.
 <br/><br/>
 
